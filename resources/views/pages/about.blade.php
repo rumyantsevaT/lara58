@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>
-    About page: {{ $name }}
+    About page: Hello, {{ $name }}
 </h1>
 
 @stop
