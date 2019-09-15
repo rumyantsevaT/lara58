@@ -6,3 +6,9 @@
 </h1>
 
 @stop
+
+@section('footer')
+    <script>
+        alert('Contact form script');
+    </script>
+@stop
