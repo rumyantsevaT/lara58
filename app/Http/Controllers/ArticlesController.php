@@ -11,7 +11,9 @@ class ArticlesController extends Controller
     {
         $articles = Article::all();
 
+//      return 'get all articles';
         return view('articles.index', compact('articles'));
+
     }
 
     public function show($id)

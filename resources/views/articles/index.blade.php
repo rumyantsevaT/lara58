@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+    <br>
     <h1>Articles</h1>
     <hr>
     @foreach($articles as $article)
@@ -13,6 +14,5 @@
             <div class="body">{{ $article->body }}</div>
         </article>
     @endforeach
-
 @stop
 
