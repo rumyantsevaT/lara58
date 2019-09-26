@@ -18,7 +18,7 @@ class ArticlesController extends Controller
 
     public function show($id)
     {
-        $article = Article::findOrFail($id);
+        $article = Article::findOrFail($id); //найди или не ошибись дословно
 
         return view('articles.show', compact('article'));
     }
