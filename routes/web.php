@@ -19,6 +19,7 @@ Route::get ('about', 'PagesController@about');
 Route::get ('contact', 'PagesController@contact');
 
 Route::get('articles', 'ArticlesController@index');
+Route::get('create', 'ArticlesController@create');
 Route::get('articles/{id}', 'ArticlesController@show');
 
-Route::get('task', 'TaskController@index');
+//Route::get('task', 'TaskController@index');

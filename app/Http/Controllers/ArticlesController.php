@@ -13,7 +13,6 @@ class ArticlesController extends Controller
 
 //      return 'get all articles';
         return view('articles.index', compact('articles'));
-
     }
 
     public function show($id)
@@ -21,5 +20,10 @@ class ArticlesController extends Controller
         $article = Article::findOrFail($id); //найди или не ошибись дословно
 
         return view('articles.show', compact('article'));
+    }
+
+    public function create()
+    {
+        return view('articles.create');
     }
 }
